@@ -11,4 +11,5 @@ This helps me practice Python concepts and improve my coding skills.
 
 ## 📌 Projects
 - Day 1 → **Fantasy Character Name Generator** 
-- Day 2 → (coming soon…)
+- Day 2 → **Travel Budget Calculator**
+- Day 3 → (coming soon…)
