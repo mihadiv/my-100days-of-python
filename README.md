@@ -1,4 +1,4 @@
-# 100 Days of Python - Inspired Projects
+# 🐍 100 Days of Python - Inspired Projects
 
 This repository contains my own projects **inspired by** the course  
 [100 Days of Code: The Complete Python Pro Bootcamp by Dr. Angela Yu](https://www.udemy.com/course/100-days-of-code/).
