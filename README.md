@@ -27,9 +27,9 @@ Generate magical names for fantasy creatures by combining an element/color and a
 **Example output:**  
 Your fantasy character name could be: Silver Dragon
 
-</details>
-
 ---
+
+</details>
 
 <details>
   <summary>Day 2 → Travel Budget Calculator</summary>
@@ -47,9 +47,9 @@ Calculate a daily budget for a trip while saving a percentage for extras.
 **Example output:**  
 You can spend $42.50 per day for your trip!
 
-</details>
-
 ---
+
+</details>
 
 <details>
   <summary>Day 3 → Space Mission</summary>
@@ -67,9 +67,9 @@ Text-based adventure where you explore a mysterious planet and try to return saf
 Inside the cave, you find two paths. Do you go to the ‘crater’ or the ‘hill’? crater
 You discover alien technology and safely return to your ship! You Win!
 
-</details>
-
 ---
+
+</details>
 
 <details>
   <summary>Day 4 → Wizard Duel</summary>
@@ -99,9 +99,9 @@ Computer chose Earth:
 
 You win the duel! ✨
 
-</details>
-
 ---
+
+</details>
 
 <details>
   <summary>Day 5 → (coming soon…)</summary>
