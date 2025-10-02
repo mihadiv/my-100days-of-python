@@ -29,6 +29,8 @@ Your fantasy character name could be: Silver Dragon
 
 </details>
 
+---
+
 <details>
   <summary>Day 2 → Travel Budget Calculator</summary>
 <br>
@@ -47,6 +49,8 @@ You can spend $42.50 per day for your trip!
 
 </details>
 
+---
+
 <details>
   <summary>Day 3 → Space Mission</summary>
 <br>
@@ -64,6 +68,8 @@ Inside the cave, you find two paths. Do you go to the ‘crater’ or the ‘hil
 You discover alien technology and safely return to your ship! You Win!
 
 </details>
+
+---
 
 <details>
   <summary>Day 4 → Wizard Duel</summary>
@@ -94,6 +100,8 @@ Computer chose Earth:
 You win the duel! ✨
 
 </details>
+
+---
 
 <details>
   <summary>Day 5 → (coming soon…)</summary>
