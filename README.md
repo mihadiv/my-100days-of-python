@@ -104,7 +104,43 @@ You win the duel! ✨
 </details>
 
 <details>
-  <summary>Day 5 → (coming soon…)</summary>
+  <summary>Day 5 → SecurePass Generator</summary>
+<br>
+**Description:**  
+A simple password generator that creates secure passwords based on user preferences, including length, uppercase letters, numbers, and symbols. The program also evaluates the generated password's strength (Easy, Medium, Strong) based on the types of characters used.
+
+**How it works:**
+
+- User inputs the desired password length.
+- User chooses whether to include uppercase letters, numbers, and symbols.
+- The program builds a character set based on these choices.
+- A random password is generated from the selected characters.
+- Password strength is determined:
+  - Only lowercase letters → Easy
+  - Lowercase + one other type (uppercase, numbers, or symbols) → Medium
+  - Lowercase + two or more other types → Strong
+- Optionally, the user can generate a second version by shuffling the original password.
+
+**Example output:**  
+Welcome to the SecurePass Generator!
+
+How long should your password be? 12  
+Include uppercase letters? (y/n) y  
+Include numbers? (y/n) y  
+Include symbols? (y/n) y  
+
+Your secure password is: Ab4$kP9!qLm2  
+Password strength: Strong
+
+Generate a second shuffled version? (y/n): y  
+Shuffled version: L2$q9bAm4!Pk
+
+---
+
+</details>
+
+<details>
+  <summary>Day 6 → (coming soon…)</summary>
 <br>
 
 Details coming soon! Stay tuned.
