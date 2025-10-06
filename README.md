@@ -106,6 +106,7 @@ You win the duel! ✨
 <details>
   <summary>Day 5 → SecurePass Generator</summary>
 <br>
+
 **Description:**  
 A simple password generator that creates secure passwords based on user preferences, including length, uppercase letters, numbers, and symbols. The program also evaluates the generated password's strength (Easy, Medium, Strong) based on the types of characters used.
 
