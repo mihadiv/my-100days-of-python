@@ -161,25 +161,6 @@ The program generates a random maze with a guaranteed path to the exit and dynam
   - If the user backtracks, abandoned positions revert to empty spaces (⬜).
 - The game ends when the robot reaches the exit.
 
-**Example Gameplay:**
-
-- You move step by step until reaching the exit, with your path updated in green.  
-
-🟦🟩🟩⬜️⬜️⬛️
-⬜️⬜️🟩⬜️⬜️⬜️
-⬜️⬜️🟩⬜️⬜️⬜️
-⬜️⬜️🟩🤖⬜️⬜️
-⬜️⬜️️️️⬜️️️️⬜️️️️⬜️⬜️
-⬜️⬜️⬜️⬜️⬜️🟥
-
-Move (w=up, s=down, a=left, d=right): d
-🟦🟩🟩⬜️⬜️⬛️
-⬜️⬜️🟩⬜️⬜️⬜️
-⬜️⬜️🟩⬜️⬜️⬜️
-⬜️⬜️🟩🟩🤖⬜️
-⬜️⬜️️️️⬜️️️️⬜️️️️⬜️⬜️
-⬜️⬜️⬜️⬜️⬜️🟥
-
 ---
 
 </details>
