@@ -1,6 +1,5 @@
 import random
 import time
-from os import WCONTINUED
 
 
 def generate_maze(size, wall_density):
