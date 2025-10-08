@@ -141,7 +141,51 @@ Shuffled version: L2$q9bAm4!Pk
 </details>
 
 <details>
-  <summary>Day 6 → (coming soon…)</summary>
+  <summary>Day 6 → Maze Challenge</summary>
+<br>
+
+**Description:**  
+A text-based maze game where the user controls a robot (🤖) step by step to reach the exit.  
+The program generates a random maze with a guaranteed path to the exit and dynamically shows the path the user has taken.  
+
+**How it works:**
+
+- User chooses difficulty (easy, medium, hard) which sets maze size and wall density.
+- Maze is generated randomly but always includes at least one path from start (🟦) to exit (🟥).
+- User moves the robot manually using:
+  - `w` → up
+  - `s` → down
+  - `a` → left
+  - `d` → right
+- The path the user has taken is marked in green (🟩) dynamically.
+  - If the user backtracks, abandoned positions revert to empty spaces (⬜).
+- The game ends when the robot reaches the exit.
+
+**Example Gameplay:**
+
+- You move step by step until reaching the exit, with your path updated in green.  
+
+🟦🟩🟩⬜️⬜️⬛️
+⬜️⬜️🟩⬜️⬜️⬜️
+⬜️⬜️🟩⬜️⬜️⬜️
+⬜️⬜️🟩🤖⬜️⬜️
+⬜️⬜️️️️⬜️️️️⬜️️️️⬜️⬜️
+⬜️⬜️⬜️⬜️⬜️🟥
+
+Move (w=up, s=down, a=left, d=right): d
+🟦🟩🟩⬜️⬜️⬛️
+⬜️⬜️🟩⬜️⬜️⬜️
+⬜️⬜️🟩⬜️⬜️⬜️
+⬜️⬜️🟩🟩🤖⬜️
+⬜️⬜️️️️⬜️️️️⬜️️️️⬜️⬜️
+⬜️⬜️⬜️⬜️⬜️🟥
+
+---
+
+</details>
+
+<details>
+  <summary>Day 7 → (coming soon…)</summary>
 <br>
 
 Details coming soon! Stay tuned.
