@@ -5,6 +5,7 @@ import os
 
 try:
     import pygame
+
     pygame_available = True
 except ImportError:
     pygame_available = False
@@ -83,8 +84,8 @@ def main():
             pygame.mixer.init()
             pygame.mixer.music.load("last_christmas.mp3")
             pygame.mixer.music.play()
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"Audio Error: {e}")
 
     print(CLEAR_SCREEN, end="")
     start_time = time.time()

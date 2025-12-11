@@ -10,7 +10,6 @@ if sys.platform.startswith("win"):
 RESET = "\033[0m"
 GREEN = "\033[32m"
 BROWN = "\033[38;5;94m"
-
 RED = "\033[91m"
 GOLD = "\033[93m"
 WHITE = "\033[97m"
@@ -91,7 +90,7 @@ def main():
         pygame.mixer.music.load("last_christmas.mp3")
         pygame.mixer.music.play()
     except Exception as e:
-        print(f"Eroare audio: {e}")
+        print(f"Audio Error: {e}")
 
     start = time.time()
     current_line = 0
@@ -110,6 +109,7 @@ def main():
         time.sleep(0.15)
 
     print("\nMerry Christmas!")
+
 
 if __name__ == "__main__":
     main()
