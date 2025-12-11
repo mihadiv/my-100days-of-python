@@ -5,6 +5,8 @@ import os
 import pygame
 from typing import List
 
+
+# --- Constants & Configuration ---
 class Colors:
     RESET = "\033[0m"
     GREEN_DARK = "\033[32m"
@@ -21,6 +23,7 @@ class Colors:
     TEXT_PALETTE = [RED, WHITE, YELLOW]
     TREE_PALETTE = [RED, YELLOW, WHITE, BLUE, CYAN, MAGENTA, ORANGE, GREEN_BRIGHT]
 
+
 class Config:
     TREE_HEIGHT = 12
     TOTAL_DURATION = 23.0
@@ -36,10 +39,12 @@ class Config:
         (17.0, "Now I've found a real love, you'll never fool me again"),
     ]
 
+
 # --- Setup & Utilities ---
 def setup_console():
     if sys.platform.startswith("win"):
         os.system("")
+
 
 def play_music(file_path: str):
     try:
@@ -49,15 +54,14 @@ def play_music(file_path: str):
     except (ImportError, Exception) as e:
         print(f"{Colors.RED}Audio Warning: Could not play music ({e}){Colors.RESET}")
 
+
 # --- Graphics Logic ---
 def build_tree(height: int) -> List[str]:
     lines = []
     center_offset = height + 10
 
-    # Star on top
     lines.append(" " * center_offset + Colors.YELLOW + "★" + Colors.RESET)
 
-    # Branches
     for i in range(height):
         branch_width = 1 + 2 * i
         padding = " " * (center_offset - i)
@@ -70,12 +74,12 @@ def build_tree(height: int) -> List[str]:
                 row += Colors.GREEN_DARK + "*" + Colors.RESET
         lines.append(padding + row)
 
-    # Trunk
     trunk_height = max(2, height // 5)
     for _ in range(trunk_height):
         lines.append(" " * (center_offset - 1) + Colors.BROWN + "###" + Colors.RESET)
 
     return lines
+
 
 def typewriter_effect(text: str, delay: float):
     current_word_color = random.choice(Colors.TEXT_PALETTE)
@@ -119,7 +123,6 @@ def main():
             if elapsed >= Config.TOTAL_DURATION:
                 break
 
-            # Check if it's time to show the next lyric line
             if current_line_index < total_lines:
                 trigger_time, text = Config.LYRICS[current_line_index]
 
@@ -133,6 +136,7 @@ def main():
         pass
     finally:
         print(f"\n{Colors.WHITE}❄ {Colors.RED}Merry Christmas! {Colors.WHITE}❄{Colors.RESET}")
+
 
 if __name__ == "__main__":
     main()

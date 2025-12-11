@@ -132,7 +132,6 @@ def main():
             if elapsed >= Config.TOTAL_DURATION:
                 break
 
-            # Toggle tree color effect
             toggle_frame = not toggle_frame
 
             tree_lines = generate_tree_lines(Config.TREE_HEIGHT, toggle_frame)
