@@ -178,25 +178,22 @@ Details coming soon! Stay tuned.
 ## 📌 Bonus Projects
 
 This repository also includes a **Bonus/** folder containing holiday-themed terminal projects.  
-Here you will find two versions of the Christmas Tree program: a static edition and an animated edition.
-
 
 <details>
   <summary>🌟 Christmas Tree – Static Edition </summary>
 <br>
 
 **Description:**  
-A non-animated version of the Christmas tree, optimized for IDE terminals such as **PyCharm**, **VS Code**, or any environment where cursor movement and frame-by-frame updates are limited.  
-The tree is rendered once, complete with multicolor ornaments, a golden star, and color-styled text displayed below the tree.  
-If `pygame` is installed, background audio will also play while the tree is displayed.
+A non-animated version of the Christmas tree, optimized for IDE terminals such as **PyCharm**, **VS Code**, or any environment where cursor movement and frame-by-frame drawing does not work reliably.  
+The tree is rendered once, with multicolor ornaments, a golden star, and colorful lyrics displayed below it.  
+Audio playback is supported in this edition as well — if `pygame` is installed, the music plays while the text is being typed out.
 
-**How it works:**
-- The program builds the tree line by line using ASCII characters.  
-- Ornaments are placed randomly using a predefined color palette.  
-- Colored text (lyrics or messages) is shown beneath the tree.  
-- Audio playback is triggered automatically if `pygame.mixer` is available.  
-- No cursor repositioning or animation is used, ensuring compatibility with IDE terminals.  
-- Ideal for environments where animated output is not displayed correctly.
+**How it works:**  
+- Builds the entire tree only once and prints it statically.  
+- Uses ANSI colors to decorate branches and ornaments.  
+- Displays song lyrics using a **typing effect**, where each character appears progressively based on timing.  
+- If `pygame.mixer` is available, background music (e.g., *last_christmas.mp3*) will play during the text animation.  
+- Ideal for IDEs where cursor positioning and continuous redraw are limited.
 
 ---
 
@@ -207,28 +204,20 @@ If `pygame` is installed, background audio will also play while the tree is disp
 <br>
 
 **Description:**  
-A fully animated version of the Christmas tree designed for real terminals such as macOS Terminal, Windows Terminal, PowerShell, or Linux consoles.  
-The tree flickers, ornaments change colors, optional snow can fall across the screen, and synchronized lyrics appear using a live typewriter effect.  
-Audio playback is also supported — when `pygame` is installed, the background music plays during the animation.
+An animated version of the Christmas tree designed for real system terminals such as macOS Terminal, Windows Terminal, PowerShell, or Linux consoles.  
+The animation refreshes the tree frame-by-frame, making branches “flicker” and ornaments change color.  
+Lyrics are displayed with the **same typing effect** as in the static version, and audio playback is supported when `pygame` is available.
 
-**How it works:**
-- The terminal screen is refreshed continuously to simulate animation.  
-- Each frame rebuilds the tree with subtle visual changes (branch color toggle, ornament variations).  
-- Colored text (lyrics) appears gradually using a timed character-by-character typing system.  
-- Lyrics begin at precise timestamps, matching the music when audio is available.  
-- Audio playback is handled through `pygame.mixer` if installed.  
-- Cursor control sequences (`\033[H`, `\033[2J`) ensure smooth animation and clean updates.  
-- Works best in full-featured terminals that support ANSI escape codes and fast screen refresh.
-
+**How it works:**  
+- Continuously redraws the tree using ANSI cursor control to simulate animation.  
+- Branch colors toggle between green shades, and ornament placement varies per frame.  
+- Displays colored lyrics gradually using the same timed **typewriter-style effect** as the static edition.  
+- Audio playback is triggered automatically if `pygame` is installed.  
+- Works best in terminals that support fast redraw and full ANSI escape sequences.
 
 ---
 
 </details>
-
-
-
-
-
 
 
 
